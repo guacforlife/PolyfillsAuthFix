@@ -1,0 +1,9 @@
+Package: com.guacforlife.polyfillsauthfix
+Name: PolyfillsAuthFix
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: Stops PoomSmart's Polyfills "Header Injection" from proxying all web traffic through its custom scheme handler, which breaks strict-auth sites — most visibly new Google account sign-in in Safari and in-app web views — on iOS 11 through 16.3. Forces PolyfillsHeaderInjectionEnabled off in com.apple.UIKit; every JavaScript polyfill keeps working. Harmless if Polyfills isn't installed.
+Maintainer: guacforlife
+Author: guacforlife
+Section: Tweaks
+Depends: mobilesubstrate
